@@ -64,10 +64,10 @@ def plot_functions(fig_name, _tr_loss, _val_loss, _sed_loss, _doa_loss, _epoch_m
 def main(argv):
     """
     Main wrapper for training sound event localization and detection network.
-    
-    :param argv: expects two optional inputs. 
+
+    :param argv: expects two optional inputs.
         first input: job_id - (optional) all the output files will be uniquely represented with this. (default) 1
-        second input: task_id - (optional) To chose the system configuration in parameters.py. 
+        second input: task_id - (optional) To chose the system configuration in parameters.py.
                                 (default) uses default parameters
     """
     if len(argv) != 3:
