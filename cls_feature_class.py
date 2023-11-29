@@ -7,7 +7,7 @@ import numpy as np
 import scipy.io.wavfile as wav
 import utils
 from sklearn import preprocessing
-from sklearn.externals import joblib
+import joblib
 from IPython import embed
 import matplotlib.pyplot as plot
 plot.switch_backend('agg')
@@ -19,7 +19,7 @@ class FeatureClass:
         # TODO: Change the path according to your machine.
         # TODO: It should point to a folder which consists of sub-folders for audio and metada
         if dataset == 'ansim':
-            self._base_folder = os.path.join('ov1_split1')
+            self._base_folder = os.path.join('D:/seld-net', 'ansim')
         elif dataset == 'resim':
             self._base_folder = os.path.join('/proj/asignal/TUT_SELD/', 'doa_data_echoic/')
         elif dataset == 'cansim':
