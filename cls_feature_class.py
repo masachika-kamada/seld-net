@@ -19,7 +19,8 @@ class FeatureClass:
         # TODO: Change the path according to your machine.
         # TODO: It should point to a folder which consists of sub-folders for audio and metada
         if dataset == 'ansim':
-            self._base_folder = os.path.join('D:/seld-net', 'ansim')
+            # self._base_folder = os.path.join('D:/seld-net', 'ansim')
+            self._base_folder = "ov1_split1"
         elif dataset == 'resim':
             self._base_folder = os.path.join('/proj/asignal/TUT_SELD/', 'doa_data_echoic/')
         elif dataset == 'cansim':
